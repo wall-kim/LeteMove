@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,user-scalable=no"/>
+	<meta name="description" content="Tizen Wearable Gestrue Controller Application" />
+	
+    <title>Tizen Wearable Gesture Controller Application</title>
+    
+	<link rel="stylesheet" href="../lib/tau/wearable/theme/default/tau.min.css">
+	<link rel="stylesheet" media="all and (-tizen-geometric-shape: circle)" href="../lib/tau/wearable/theme/default/tau.circle.min.css">
+	
+	<!-- load theme file for your application -->
+	<link rel="stylesheet"  href="../css/main.css">
+	
+</head>
+<body>
+	<div class="ui-page ui-page-active" id="main">
+		<header class="ui-header">
+			<h2 class="ui-title" id="main-title">Main</h2>
+		</header>
+		<div class="ui-content">
+			<ul class="ui-listview">
+				<li><a href="#" onclick="connect();">Connect</a></li>
+				<li><a href="#" onclick="is_main = false; tau.changePage('#train');">Train</a></li>
+				<li><a href="#" onclick="is_main = false; tau.changePage('#control'); fileInTrained();">Control</a></li>
+				<li><a href="#" onclick="disconnect();">Disconnect</a></li>
+			</ul>
+		</div>
+		<div id="toast-main" class="ui-popup ui-popup-toast">
+			<div id="toast-content-main" class="ui-popup-content">
+			</div>
+		</div>
+	</div>
+	
+	<div class="ui-page" id="train">
+		<header class="ui-header" id="train-header">
+			<h2 class="ui-title" id="train-title">Train</h2>
+		</header>
+		<div class="ui-content" id="train-content">
+			<div class="train-start-turns"  id="train-start-turns"></div>
+			
+			<div class="train-selected-text" id="train-selected-text">
+				<div class="train-label-selected-text" id="train-label-selected-text"></div>
+				<div class="train-option-selected-text" id="train-option-selected-text"></div>
+			</div>
+			
+			<div class="train-label-btns" id="train-label-btns">
+				<div class="train-label-btn" id="train-label-btn1">⇋</div>
+      			<div class="train-label-btn" id="train-label-btn2">⇌</div>
+      			<div class="train-label-btn" id="train-label-btn3">↺</div>
+      			<div class="train-label-btn" id="train-label-btn4">↻</div>
+      			<!--div class="train-label-btn" id="train-label-btn5">⇵</div-->
+     		</div>
+			
+			<div class="train-option-btns" id="train-option-btns">
+				<div class="train-option-btn" id="train-option-short">Short</div>
+      			<div class="train-option-btn" id="train-option-long">Long</div>
+     		</div>
+			
+			<div class="train-start-btn" id="train-start-btn">Start</div>
+			
+		</div>
+		
+		<div id="toast-train" class="ui-popup ui-popup-toast">
+			<div id="toast-content-train" class="ui-popup-content"></div>
+		</div>
+		
+	</div>
+	
+	<div class="ui-page" id="control">
+		<header class="ui-header">
+			<h2 class="ui-title" id="control-title">Control</h2>
+		</header>
+		<div class="ui-content" id="control-content">
+			<div class="control-start-btn" id="control-start-btn">Start</div>
+			<div class="control-result" id="control-result"></div>
+			<div class="control-label" id="control-label"></div>
+			
+			<div class="control-option-btns" id="control-option-btns">
+				<div class="control-option-selected-text" id="control-option-selected-text"></div>
+				<div class="control-option-btn" id="control-option-short">Short</div>
+      			<div class="control-option-btn" id="control-option-long">Long</div>
+      		</div>
+     	</div>
+		
+		
+		<div id="toast-control" class="ui-popup ui-popup-toast">
+			<div id="toast-content-control" class="ui-popup-content">
+			</div>
+		</div>
+	</div>
+	
+	
+	
+</body>
+
+<script type="text/javascript" src="../lib/tau/wearable/js/tau.min.js"></script>
+<script type="text/javascript" src="../js/circle-helper.js"></script>
+
+<!-- load javascript file for your application -->
+<script src="../js/data-modi.js"></script>
+<script src="../js/data-split.js"></script>
+<script src="../js/file-io.js"></script>
+<script src="../js/training.js"></script>
+<script src="../js/control.js"></script>
+<script src="../js/main.js"></script>
+
+
+</html>
+

@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "/Users/wall/Downloads/AndroidStudioProjects/GlTron/GlTron/build/intermediates/res/merged/debug/raw/recognizer.mtl",
+        "source": "/Users/wall/Downloads/AndroidStudioProjects/GlTron/GlTron/src/main/res/raw/recognizer.mtl"
+    },
+    {
+        "merged": "/Users/wall/Downloads/AndroidStudioProjects/GlTron/GlTron/build/intermediates/res/merged/debug/raw/game_engine.ogg",
+        "source": "/Users/wall/Downloads/AndroidStudioProjects/GlTron/GlTron/src/main/res/raw/game_engine.ogg"
+    },
+    {
+        "merged": "/Users/wall/Downloads/AndroidStudioProjects/GlTron/GlTron/build/intermediates/res/merged/debug/raw/lightcycle.mtl",
+        "source": "/Users/wall/Downloads/AndroidStudioProjects/GlTron/GlTron/src/main/res/raw/lightcycle.mtl"
+    },
+    {
+        "merged": "/Users/wall/Downloads/AndroidStudioProjects/GlTron/GlTron/build/intermediates/res/merged/debug/raw/game_crash.ogg",
+        "source": "/Users/wall/Downloads/AndroidStudioProjects/GlTron/GlTron/src/main/res/raw/game_crash.ogg"
+    },
+    {
+        "merged": "/Users/wall/Downloads/AndroidStudioProjects/GlTron/GlTron/build/intermediates/res/merged/debug/raw/game_recognizer.ogg",
+        "source": "/Users/wall/Downloads/AndroidStudioProjects/GlTron/GlTron/src/main/res/raw/game_recognizer.ogg"
+    },
+    {
+        "merged": "/Users/wall/Downloads/AndroidStudioProjects/GlTron/GlTron/build/intermediates/res/merged/debug/raw/recognizerhigh.obj",
+        "source": "/Users/wall/Downloads/AndroidStudioProjects/GlTron/GlTron/src/main/res/raw/recognizerhigh.obj"
+    },
+    {
+        "merged": "/Users/wall/Downloads/AndroidStudioProjects/GlTron/GlTron/build/intermediates/res/merged/debug/raw/song_revenge_of_cats.ogg",
+        "source": "/Users/wall/Downloads/AndroidStudioProjects/GlTron/GlTron/src/main/res/raw/song_revenge_of_cats.ogg"
+    },
+    {
+        "merged": "/Users/wall/Downloads/AndroidStudioProjects/GlTron/GlTron/build/intermediates/res/merged/debug/raw/lightcyclehigh.obj",
+        "source": "/Users/wall/Downloads/AndroidStudioProjects/GlTron/GlTron/src/main/res/raw/lightcyclehigh.obj"
+    }
+]
