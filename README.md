@@ -4,7 +4,7 @@
 
 ###Main Page
 -	Connect : Prepare for the SAP communication with remote Samsung mobile device connected using bluetooth (블루투스로 연결된 모바일 기기와 SAP을 사용해 통신을 준비)
--	Disconnect : SAP 통신을 위한 연결을 해제
+-	Disconnect : Disconnect Mobile device (SAP 통신을 위한 연결을 해제)
 -	Train : Gesture Training Page로 이동
 -	Control : Gesture를 사용한 Remote Control Page로 이동 
   
