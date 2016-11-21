@@ -32,7 +32,7 @@ import android.view.WindowManager;
 
 public class glTron extends Activity {
     /** Called when the activity is first created. */
-	private OpenGLView _View;
+	public static OpenGLView _View;
 	
 	private Boolean _FocusChangeFalseSeen = false;
 	private Boolean _Resume = false;
