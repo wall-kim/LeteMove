@@ -28,8 +28,11 @@ import android.os.Binder;
 import android.os.Handler;
 import android.os.IBinder;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.widget.Toast;
 
+import com.glTron.OpenGLView;
+import com.glTron.glTron;
 import com.samsung.android.sdk.SsdkUnsupportedException;
 import com.samsung.android.sdk.accessory.*;
 
@@ -44,6 +47,7 @@ public class ProviderService extends SAAgent {
     private final IBinder mBinder = new LocalBinder();
     private ServiceConnection mConnectionHandler = null;
     Handler mHandler = new Handler();
+
 
     //public final static int BIG_EDIAN = 1;
     //public final static int Little_EDIAN = 2;
@@ -145,6 +149,9 @@ public class ProviderService extends SAAgent {
     }
 
     public class ServiceConnection extends SASocket {
+
+
+
         public ServiceConnection() {
             super(ServiceConnection.class.getName());
         }
@@ -159,12 +166,18 @@ public class ProviderService extends SAAgent {
                 return;
             }
 
-            if(data.length < 2){
+
+
+            Log.i("Data Length", Integer.toString(data.length));
+
+            if(data.length == 1){
                 GLTronGame.inputDirection = GLTronGame.Players[GLTronGame.OWN_PLAYER].TURN_LEFT;
                 GLTronGame.Players[GLTronGame.OWN_PLAYER].doTurn(GLTronGame.inputDirection, GLTronGame.TimeCurrent);
-            } else {
+            } else if(data.length == 2){
                 GLTronGame.inputDirection = GLTronGame.Players[GLTronGame.OWN_PLAYER].TURN_RIGHT;
                 GLTronGame.Players[GLTronGame.OWN_PLAYER].doTurn(GLTronGame.inputDirection, GLTronGame.TimeCurrent);
+            } else if(data.length == 3){
+                glTron._View.onTouchEvent(null);
             }
         }
 
