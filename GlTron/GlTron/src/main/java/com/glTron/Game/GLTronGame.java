@@ -29,6 +29,7 @@ import javax.microedition.khronos.opengles.GL10;
 import android.content.Context;
 import android.os.Handler;
 import android.os.SystemClock;
+import android.util.Log;
 
 import com.glTron.R;
 import com.glTron.Game.Camera.CamType;
@@ -115,6 +116,7 @@ public class GLTronGame {
 	
 	public void initialiseGame()
 	{
+
 		int player;
 		
 		// Load sounds
@@ -284,9 +286,12 @@ public class GLTronGame {
 	
 	public void addTouchEvent(float x, float y)
 	{
+		Log.i("Confirm!","Confirm!");
 		if(boLoading)
 			return;
-		
+
+		Log.i("Confirm!!","Confirm!!");
+
 		if(Players[OWN_PLAYER].getSpeed() > 0.0f)
 		{
 			if(boInitialState)
