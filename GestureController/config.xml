@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://yourdomain/GestureController" version="1.0.0" viewmodes="maximized">
-    <tizen:application id="vIOREaMHI7.GestureController" package="vIOREaMHI7" required_version="2.3.1"/>
+<widget xmlns:tizen="http://tizen.org/ns/widgets" xmlns="http://www.w3.org/ns/widgets" id="http://yourdomain/RemyApplication" version="1.0.0" viewmodes="maximized">
+    <access origin="*" subdomains="true"></access>
+    <tizen:application id="y7RYHTr9Jb.RemyApplication" package="y7RYHTr9Jb" required_version="2.3.1"/>
+    <author email="wall.kim@outlook.kr">Wall Kim</author>
     <content src="html/main.html"/>
     <feature name="http://tizen.org/feature/screen.size.all"/>
-    <feature name="http://tizen.org/api/filesystem"/>
-    <icon src="icon.png"/>
+    <icon src="remyicon.png"/>
     <tizen:metadata key="AccessoryServicesLocation" value="res/xml/accessoryservices.xml"/>
-    <name>Let'eMove</name>
+    <name>Remy</name>
+    <preference name="hour" value="value0" readonly="false"/>
+    <preference name="minute" value="value1" readonly="false"/>
+    <preference name="second" value="value2" readonly="false"/>
     <tizen:privilege name="http://developer.samsung.com/tizen/privilege/accessoryprotocol"/>
     <tizen:privilege name="http://tizen.org/privilege/power"/>
-    <tizen:privilege name="http://tizen.org/privilege/filesystem.read"/>
-    <tizen:privilege name="http://tizen.org/privilege/filesystem.write"/>
-    <tizen:privilege name="http://tizen.org/privilege/content.read"/>
-    <tizen:privilege name="http://tizen.org/privilege/content.write"/>
+    <tizen:privilege name="http://tizen.org/privilege/application.info"/>
+    <tizen:privilege name="http://tizen.org/privilege/application.launch"/>
+    <tizen:privilege name="http://tizen.org/privilege/internet"/>
     <tizen:profile name="wearable"/>
-    <tizen:setting background-support="disable" encryption="disable" hwkey-event="enable"/>
+    <tizen:setting background-support="enable" encryption="disable" hwkey-event="enable"/>
 </widget>
